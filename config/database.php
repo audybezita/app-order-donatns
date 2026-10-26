@@ -6,7 +6,7 @@ function db() {
 
     if ($pdo === null) {
         $host = 'localhost';
-        $db = 'donat_ns';
+        $db = 'donat_ns_app';
         $user = 'root';
         $pass = '';
         $charset = 'utf8mb4';
@@ -22,7 +22,7 @@ function db() {
             $pdo = new PDO($dsn, $user, $pass, $options);
         } catch (PDOException $e) {
             http_response_code(500);
-            die('Koneksi database gagal. Pastikan MySQL XAMPP aktif dan database donat_ns sudah dibuat.');
+            die('Koneksi database gagal. Pastikan MySQL XAMPP aktif dan database donat_ns_app sudah dibuat.');
         }
     }
 
