@@ -1,0 +1,40 @@
+:root {
+  --pink: #ffb7d5;
+  --pink-strong: #f86ca6;
+  --blue: #dfeeff;
+  --white: #ffffff;
+  --text: #1d1d1f;
+  --muted: #6c757d;
+  --shadow: 0 10px 30px rgba(248, 108, 166, 0.12);
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #fffafc;
+  color: var(--text);
+}
+
+.text-pink { color: var(--pink-strong) !important; }
+.bg-pink { background: var(--pink-strong) !important; }
+.btn-pink { background: var(--pink-strong); color: white; border: none; }
+.btn-pink:hover { background: #eb5a96; color: white; }
+.btn-outline-pink { border: 1px solid var(--pink-strong); color: var(--pink-strong); }
+.btn-outline-pink:hover { background: var(--pink-strong); color: white; }
+.brand-logo { width: 40px; height: 40px; object-fit: cover; border-radius: 12px; }
+.hero-section { background: linear-gradient(135deg, #fff3f8, #eaf4ff); min-height: 420px; }
+.banner-card, .auth-card, .summary-card, .info-box, .empty-state, .checkout-info, .cart-item { background: white; border-radius: 18px; box-shadow: var(--shadow); padding: 22px; }
+.product-card { background: white; border-radius: 22px; overflow: hidden; box-shadow: var(--shadow); transition: 0.25s ease; }
+.product-card:hover { transform: translateY(-4px); }
+.product-image { width: 100%; height: 220px; object-fit: cover; }
+.product-body { padding: 18px; }
+.price { color: var(--pink-strong); font-weight: 700; font-size: 1.2rem; }
+.status-badge { border-radius: 999px; padding: 6px 10px; font-size: 0.78rem; font-weight: 600; }
+.status-badge.available { background: #dffaf0; color: #149b5a; }
+.status-badge.sold-out { background: #fbe4ee; color: #d63e76; }
+.qty-control { display: inline-flex; align-items: center; border: 1px solid #ececec; border-radius: 12px; overflow: hidden; }
+.qty-btn { width: 34px; height: 34px; border: none; background: #f7f7f7; }
+.qty-input { width: 52px; border: none; text-align: center; }
+.cart-image { width: 100%; height: 120px; object-fit: cover; border-radius: 12px; }
+.total-price { color: var(--pink-strong); font-size: 1.2rem; }
+.timeline-item { display: flex; gap: 12px; margin-bottom: 16px; }
+.timeline-dot { width: 14px; height: 14px; background: var(--pink-strong); border-radius: 50%; margin-top: 4px; }
