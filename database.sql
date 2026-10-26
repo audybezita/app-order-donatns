@@ -1,5 +1,5 @@
-CREATE DATABASE IF NOT EXISTS donat_ns CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
-USE donat_ns;
+CREATE DATABASE IF NOT EXISTS donat_ns_app CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
+USE donat_ns_app;
 
 DROP TABLE IF EXISTS order_status_history;
 DROP TABLE IF EXISTS order_items;
